@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+        <title>Cartão de crédito</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card"><!--Cartão frente-->
+                <div class="card-content">
+                    <div class="row">
+                        <div class="card-image">
+                            <img src="assets/chip.png" alt="chip" width="80px" id="chip">
+                            <img src="assets/visa.png" alt="visa" width="125px" id="visa">
+                            <img src="assets/logo.png" alt="logo" width="60px" id="logo">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-text">Click</p>
+                            <p id="card-name">Itaucard</p>
+                            <p id="user-name">ABCDEF G HIJKLM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card"><!--Cartão verso-->
+                <div class="card-content">
+                    <div class="row">
+                        <div class="card-info">
+                            <p class="card-text">
+                                Visa Service. EUA e Canadá: 1 800 396 9665. Outros países, ligue a cobrar: 1 303 967 1095 
+                                SAC 0800 724 4845 
+                                Ouvidoria 0800 570 0011
+                            </p>
+                        </div>
+                        <div class="card-line">
+                            <div class="b-line"></div>
+                            <div class="w-line"></div>
+                            <p class="line-text">740</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="card-phone-number">
+                                3003 3030 <br>
+                                0800 720 3030 <br>
+                                55 11 2322 4828 <br>
+                                0800 722 1722
+                            </p>
+                            <div class="card-text-group">
+                                <p class="text-item">validade</p>
+                                <p class="text-item">assinatura autorizada</p>
+                                <p class="text-item">cód. segurança</p>
+                            </div>
+                            <div class="card-text-group">
+                                <p class="text-item">capitais e regiões metropolitanas</p>
+                                <p class="text-item">demais localidades</p>
+                                <p class="text-item">exterior (ligue a cobrar)</p>
+                                <p class="text-item">deficientes</p>
+                                <p class="text-item">GEMALTO CWB U11843C7A CRD 200V 321</p>
+                            </div>
+                            <div class="card-number-group">
+                                <p class="number-item">10/27</p>
+                                <p class="number-item">0000 0000 0000 0000</p>
+                            </div>
+                            <div class="card-text-group">
+                                <p class="text-item">Baixe o app itaucard nas lojas:</p>  
+                                <div class="text-span"></div>
+                                <div class="card-image">
+                                    <img src="assets/apple.svg" alt="apple" height="40px" id="app-store">
+                                    <img src="assets/google.svg" alt="google" height="40px" id="google-play">
+                                    <img src="assets/plus.png" alt="plus" height="65px" id="plus">
+                                    <img src="assets/banco.svg" alt="banco" width="115px" id="banco">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--container-->
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400
+        });
+        </script>
+    </body>
+</html>
